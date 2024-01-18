@@ -5,6 +5,11 @@ const init = async () => {
   const server = Hapi.server({
     port: 5000,
     host: 'localhost',
+    routes: {
+      cors: {
+        origin: ['*'],
+      },
+    },
   });
 
   server.route(routes);
@@ -13,3 +18,5 @@ const init = async () => {
 };
 
 init();
+
+// Front-end tester:  http://notesapp-v1.dicodingacademy.com/
