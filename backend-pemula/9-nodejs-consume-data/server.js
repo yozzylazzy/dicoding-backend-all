@@ -12,7 +12,7 @@ const userService = `http://localhost:${USER_SERVICE_PORT}`;
 const init = async () => {
   const server = Hapi.server({
     port: 3000,
-    lhost: 'localhost',
+    host: 'localhost',
   });
 
   server.route([

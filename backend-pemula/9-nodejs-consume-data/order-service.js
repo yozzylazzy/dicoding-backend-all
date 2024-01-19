@@ -21,6 +21,7 @@ const server = http.createServer((req, res) => {
   }
 
   res.setHeader('Content-Type', 'application/json');
+
   res.end(JSON.stringify({
     id,
     menu: menus[id % menus.length],
@@ -29,5 +30,5 @@ const server = http.createServer((req, res) => {
 
 server.listen(process.env.PORT || 0, () => {
   const { port } = server.address();
-  console.log(`Order service listening on localhost on port : ${port}`);
-})
+  console.log(`Order service listening on localhost on port: ${port}`);
+});
