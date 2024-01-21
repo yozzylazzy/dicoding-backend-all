@@ -70,7 +70,7 @@ class NotesHandler {
       return {
         status: 'success',
         message: 'Catatan berhasil diperbarui',
-      }
+      };
     } catch (error) {
       const response = h.response({
         status: 'fail',
@@ -88,7 +88,7 @@ class NotesHandler {
       return {
         status: 'success',
         message: 'Catatan berhasil dihapus',
-      }
+      };
     } catch (error) {
       const response = h.response({
         status: 'fail',
